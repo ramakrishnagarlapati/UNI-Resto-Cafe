@@ -1,0 +1,105 @@
+.dish-item {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid rgb(177, 177, 177);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 12px;
+}
+
+.dish-type-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-right: 10px;
+}
+.dish-type-container.non-veg {
+  border: 1px solid brown;
+}
+.dish-type-container.veg {
+  border: 1px solid rgb(5, 143, 5);
+}
+.dish-type {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.dish-type.veg {
+  background-color: rgb(5, 143, 5);
+}
+.dish-type.non-veg {
+  background-color: brown;
+}
+.dish-name {
+  line-height: 1.2;
+  font-size: 20px;
+}
+.dish-price {
+  margin: 8px 0;
+  color: gray;
+  font-weight: 600;
+  font-size: 18px;
+}
+.dish-description {
+  font-size: 16px;
+  color: rgb(158, 158, 158);
+}
+.dish-calories {
+  color: rgb(255, 189, 67);
+  font-weight: 600;
+  font-size: 18px;
+  align-self: center;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+@media (min-width: 1024px) {
+  .dish-calories {
+    margin-right: 40px;
+  }
+}
+
+.dish-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.cart-control-btns-container {
+  max-width: 150px;
+  margin-block: 16px;
+  background-color: rgb(5, 143, 5);
+  padding: 16px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-control-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  place-items: center;
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.item-count {
+  color: white;
+  font-size: 20px;
+}
+.customizations-availabilty {
+  font-size: 18px;
+  color: rgb(103, 103, 255);
+}
+.dish-not-available {
+  font-size: 18px;
+  color: rgb(245, 96, 96);
+  margin-top: 16px;
+}

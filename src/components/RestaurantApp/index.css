@@ -1,0 +1,33 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-container {
+  padding: 0px 30px;
+  box-shadow: 0px 7px 5px -5px rgba(0, 0, 0, 0.1);
+}
+.category-item-btn {
+  padding: 20px 0;
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+}
+.category-item-btn.active {
+  color: orangered;
+  border-bottom: 2px solid orangered;
+}
+.slick-next::before,
+.slick-prev::before {
+  color: gray !important;
+}
+.dishes-list {
+  padding: 10px;
+}
